@@ -1,0 +1,15 @@
+pandas
+numpy
+pymongo
+scikit-learn
+flask
+seaborn
+matplotlib
+imblearn==0.0
+xgboost
+missingno
+plotly
+nbformat>=4.2.0
+kneed
+pyyaml
+#-e . 

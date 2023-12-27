@@ -1,0 +1,51 @@
+<html>
+<body>
+<form action="{{url_for('predict_datapoint')}}" method="POST">
+
+    <div class="form-group">
+        <label for="Cement">Cement (kg in a m^3 mixture):</label>
+        <input type="text" id="Cement" name="Cement" placeholder="Enter value in (float)">
+    </div>
+
+    <div class="form-group">  
+        <label for="Blast">Blast Furnace Slag (kg in a m^3 mixture):</label>
+        <input type="text" id="Blast" name="Blast" placeholder="Enter value in (float)">
+    </div>
+    
+    <div class="form-group">
+        <label for="Fly">Fly Ash (kg in a m^3 mixture):</label>
+        <input type="text" id="Fly" name="Fly" placeholder="Enter value in (float)">
+    </div>
+  
+    <div class="form-group">
+        <label for="Water">Water (kg in a m^3 mixture):</label>
+        <input type="text" id="Water" name="Water" placeholder="Enter value in (float)">
+    </div>
+  
+    <div class="form-group">
+        <label for="Superplasticizer">Superplasticizer (kg in a m^3 mixture):</label>
+        <input type="text" id="Superplasticizer" name="Superplasticizer" placeholder="Enter value in (float)">
+    </div>         
+
+    <div class="form-group">
+      <label for="Coarse">Coarse Aggregate (kg in a m^3 mixture):</label>
+      <input type="text" id="Coarse" name="Coarse" placeholder="Enter value in (float)">
+    </div> 
+
+    <div class="form-group">
+      <label for="Fine">Fine Aggregate (kg in a m^3 mixture):</label>
+      <input type="text" id="Fine" name="Fine" placeholder="Enter value in (float)">
+    </div>
+    
+    <div class="form-group">
+      <label for="Age">Age(day):</label>
+      <input type="text" id="Age" name="Age" placeholder="Enter value in (float)">
+
+
+<div style="clear:both;"></div>
+  <input type="submit" value="Submit">
+</form>
+
+{{final_result}}
+</body>
+</html>
