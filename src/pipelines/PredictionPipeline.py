@@ -74,9 +74,9 @@ class BatchPrediction:
             model = load_obj(self.prediction_config.model_path)
 
             x = preprocessor.transform(df)
-            y = model.predict(x)
+            y = pd.DataFrame(model.predict(x),columns='Output')
 
-            data = pd.DataFrame(np.c_[x,y],columns = df.columns)
+            data = pd.concat(x,y)
 
             os.makedirs(self.prediction_config.prediction_file_path,exist_ok=True)
             data.to_csv(self.prediction_config.prediction_file_path,header=True,index=False)
