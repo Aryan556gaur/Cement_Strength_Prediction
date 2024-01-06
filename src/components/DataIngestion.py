@@ -39,3 +39,7 @@ class DataIngestion:
         except Exception as e:
             logging.info("Error occurred in Data Ingestion")
             raise CustomException(e,sys)
+        
+if __name__=="__main__":
+    obj=DataIngestion()
+    raw_data =obj.initiate_ingestion()
