@@ -32,7 +32,7 @@ Cloud: Deploy the model as a web service on a cloud platform like AWS App Runner
 
 Usage 
 Send a POST request to the API endpoint with the Pokémon's features in the request body at http://localhost:5000/predict
-OR Or you may upload a file for Batch Prediction using route '/predict_file" and your file with predicted outputs will be downloaded in your system when request method is "POST"
+OR you may upload a file for Batch Prediction using route '/predict_file" and your file with predicted outputs will be downloaded in your system when request method is "POST"
 
 Contact
 https://www.linkedin.com/in/aryan-gaur-b49550258/)https://www.linkedin.com/in/aryan-gaur-b49550258/
