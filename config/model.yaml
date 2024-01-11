@@ -70,15 +70,6 @@ model_selection:
           - 9
           - 11
 
-      AdaBoostRegressor:
-        search_param_grid:
-         n_estimators:
-          - 100
-          - 150
-
-         learning_rate:
-          - 0.1
-          - 1
 
 
       
