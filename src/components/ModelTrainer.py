@@ -2,7 +2,7 @@ import os, sys
 from src.logger import logging
 from src.exception import CustomException
 from src.utils import save_object, read_yaml
-from sklearn.ensemble import RandomForestRegressor, AdaBoostRegressor, GradientBoostingRegressor
+from sklearn.ensemble import RandomForestRegressor,GradientBoostingRegressor
 from xgboost import XGBRegressor
 from sklearn.model_selection import GridSearchCV
 from sklearn.svm import SVR
@@ -24,7 +24,7 @@ class ModelTrainer:
         try:
             logging.info("Model Training Starts")
 
-            models = {"AdaBoostRegressor": AdaBoostRegressor(),"RandomForestRegressor": RandomForestRegressor(),
+            models = {"RandomForestRegressor": RandomForestRegressor(),
             "XGBRegressor": XGBRegressor(),"GradientBoostingRegressor": GradientBoostingRegressor(),
             "DecisionTreeRegressor": DecisionTreeRegressor(),"SVR": SVR()}
 
